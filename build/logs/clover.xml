@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1456698845">
-  <project timestamp="1456698845">
+<coverage generated="1456701748">
+  <project timestamp="1456701748">
     <package name="Pyjac\OpenSourceEvangelist\Evangelist">
       <file name="/Users/bendozy/Code/Checkpoints/OpenSourceEvangelist/src/Evangelist/AssociateEvangelist.php">
         <class name="AssociateEvangelist" namespace="Pyjac\OpenSourceEvangelist\Evangelist">
