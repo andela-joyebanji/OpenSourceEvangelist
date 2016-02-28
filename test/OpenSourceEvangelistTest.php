@@ -5,6 +5,7 @@ use Pyjac\OpenSourceEvangelist\OpenSourceEvangelist;
 use Pyjac\OpenSourceEvangelist\Evangelist\EvangelistAbstract;
 use Pyjac\OpenSourceEvangelist\OpenSourceEvangelistDataSource;
 use Pyjac\OpenSourceEvangelist\OpenSourceEvangelistFactory;
+use  Pyjac\OpenSourceEvangelist\Evangelist\SeniorEvangelist;
 
 class OpenSourceEvangelistTest extends PHPUnit_Framework_TestCase
 {
@@ -24,22 +25,27 @@ class OpenSourceEvangelistTest extends PHPUnit_Framework_TestCase
 
     protected function setUp()
     {
+    	
     	$evangelistData = new StdClass;
 		$evangelistData->public_repos = 25;
 		$evangelistData->login = 'pyjac';
 
-    	$this->openSourceEvangelistDataSource = m::mock('Pyjac\OpenSourceEvangelist\OpenSourceEvangelistDataSourceInterface');
-        $this->openSourceEvangelistDataSource->shouldReceive('getEvangelistData')->once()->andReturn($evangelistData);
+		$seniorEvangelist = new SeniorEvangelist($evangelistData->login, $evangelistData->public_repos);
 
-        //$this->openSourceEvangelistDataSource  = new OpenSourceEvangelistDataSource();
-        $this->openSourceEvangelistFactory  = new OpenSourceEvangelistFactory();
+    	$this->openSourceEvangelistDataSource = m::mock('Pyjac\OpenSourceEvangelist\OpenSourceEvangelistDataSourceInterface');
+        $this->openSourceEvangelistDataSource->shouldReceive('getEvangelistData')->with('pyjac')->once()->andReturn($evangelistData);
+
+        $this->openSourceEvangelistFactory = m::mock('Pyjac\OpenSourceEvangelist\OpenSourceEvangelistFactoryInterface');
+        $this->openSourceEvangelistFactory->shouldReceive('createEvangelist')->with($evangelistData->login,$evangelistData->public_repos)
+        ->once()->andReturn($seniorEvangelist);
+        
+        //$this->openSourceEvangelistFactory  = new OpenSourceEvangelistFactory();
     }
 	
 
     public function testOpenSourceEvangelistGetEvangelist()
     {
     	
-
         $openSourceEvangelist = new OpenSourceEvangelist(
         		$this->openSourceEvangelistDataSource,
         		$this->openSourceEvangelistFactory
