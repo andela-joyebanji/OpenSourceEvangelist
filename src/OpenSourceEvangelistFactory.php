@@ -14,7 +14,7 @@ class OpenSourceEvangelistFactory implements OpenSourceEvangelistFactoryInterfac
 	{
 		if($repos >= 5 && $repos <= 10){
 
-			return new NoneEvangelist($username, $repos);
+			return new JuniorEvangelist($username, $repos);
 		}
 		if($repos >= 11 && $repos <= 20){
 
@@ -25,7 +25,7 @@ class OpenSourceEvangelistFactory implements OpenSourceEvangelistFactoryInterfac
 			return new SeniorEvangelist($username, $repos);
 		}
 
-		return new NonEvangelist($username, $repos);
+		return new NoneEvangelist($username, $repos);
 	}
 	
 }
