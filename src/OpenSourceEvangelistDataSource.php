@@ -6,7 +6,7 @@ use GuzzleHttp;
 
 class OpenSourceEvangelistDataSource implements OpenSourceEvangelistDataSourceInterface
 {
-	public function getEvangelistDataData($username)
+	public function getEvangelistData($username)
 	{
 		try {
 			$client = new GuzzleHttp\Client();
