@@ -9,7 +9,13 @@ use Pyjac\OpenSourceEvangelist\Evangelist\NoneEvangelist;
 
 class OpenSourceEvangelistFactoryTest extends PHPUnit_Framework_TestCase
 {
-	
+	/**
+     * The instance of OpenSourceEvangelistFactory used in the test.
+     * 
+     * @var Pyjac\OpenSourceEvangelist\OpenSourceEvangelistFactory
+     */
+    protected $openSourceEvangelistFactory;
+    
     protected function setUp()
     {
         $this->openSourceEvangelistFactory = new OpenSourceEvangelistFactory();
@@ -63,7 +69,7 @@ class OpenSourceEvangelistFactoryTest extends PHPUnit_Framework_TestCase
      */
     public function testCreateEvangelistThrowsInvalidArgumentExceptionWhenNonStringValueIsPassedForUsername()
     {
-        $evangelist = $this->openSourceEvangelistFactory->createEvangelist(4, 4);
+        $this->openSourceEvangelistFactory->createEvangelist(4, 4);
     }
 
     /**
@@ -71,7 +77,7 @@ class OpenSourceEvangelistFactoryTest extends PHPUnit_Framework_TestCase
      */
     public function testCreateEvangelistThrowsInvalidArgumentExceptionWhenNonIntegerValueIsPassedForRepos()
     {
-        $evangelist = $this->openSourceEvangelistFactory->createEvangelist(4, "pyjac");
+        $this->openSourceEvangelistFactory->createEvangelist(4, "pyjac");
     }
 
 }
