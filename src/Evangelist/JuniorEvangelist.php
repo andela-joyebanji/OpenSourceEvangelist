@@ -2,7 +2,7 @@
 
 namespace Pyjac\OpenSourceEvangelist\Evangelist;
 
-class JuniorEvangelist extends EvangelistInterface
+class JuniorEvangelist extends EvangelistAbstract
 {
 	/**
 	 * Create a new junior envangelist instance.
