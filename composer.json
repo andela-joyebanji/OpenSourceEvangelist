@@ -1,0 +1,31 @@
+{
+    "name": "Pyjac/OpenSourceEvangelist",
+    "description": "This package aims to provide an analysis based on the number of open source projects an individual possess on Github.",
+    "type": "",
+    "license": "MIT",
+    "require": {
+        "php" : ">=5.6",
+        "guzzlehttp/guzzle": "~6.0",
+        "php-di/php-di": "^5.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0",
+        "mockery/mockery": "dev-master"
+    },
+    "php" : ">=5.6",
+    "authors": [
+        {
+            "name": "andela-joyebanji",
+            "email": "oyebanji.jacob@andela.com",
+            "role": "Software Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Pyjac\\OpenSourceEvangelist\\" : "src",
+            "Pyjac\\OpenSourceEvangelist\\Exception\\" : "src/exception"
+            
+
+        }
+    }
+}
