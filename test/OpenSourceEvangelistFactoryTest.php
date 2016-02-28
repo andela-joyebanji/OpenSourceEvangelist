@@ -58,4 +58,20 @@ class OpenSourceEvangelistFactoryTest extends PHPUnit_Framework_TestCase
         $this->assertInstanceOf(NoneEvangelist::class, $evangelist);
     }
 
+    /**
+     * @expectedException \InvalidArgumentException
+     */
+    public function testCreateEvangelistThrowsInvalidArgumentExceptionWhenNonStringValueIsPassedForUsername()
+    {
+        $evangelist = $this->openSourceEvangelistFactory->createEvangelist(4, 4);
+    }
+
+    /**
+     * @expectedException \InvalidArgumentException
+     */
+    public function testCreateEvangelistThrowsInvalidArgumentExceptionWhenNonIntegerValueIsPassedForRepos()
+    {
+        $evangelist = $this->openSourceEvangelistFactory->createEvangelist(4, "pyjac");
+    }
+
 }
