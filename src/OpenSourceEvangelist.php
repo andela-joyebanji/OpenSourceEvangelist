@@ -2,6 +2,9 @@
 
 namespace Pyjac\OpenSourceEvangelist;
 
+use Pyjac\OpenSourceEvangelist\OpenSourceEvangelistDataSourceInterface;
+use Pyjac\OpenSourceEvangelist\OpenSourceEvangelistFactoryInterface;
+
 class OpenSourceEvangelist
 {
     /**
