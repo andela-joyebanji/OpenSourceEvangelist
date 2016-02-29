@@ -1,26 +1,25 @@
 <?php
 
-use Pyjac\OpenSourceEvangelist\OpenSourceEvangelistFactory;
+use Pyjac\OpenSourceEvangelist\Evangelist\AssociateEvangelist;
 use Pyjac\OpenSourceEvangelist\Evangelist\EvangelistAbstract;
 use Pyjac\OpenSourceEvangelist\Evangelist\JuniorEvangelist;
-use Pyjac\OpenSourceEvangelist\Evangelist\AssociateEvangelist;
-use Pyjac\OpenSourceEvangelist\Evangelist\SeniorEvangelist;
 use Pyjac\OpenSourceEvangelist\Evangelist\NoneEvangelist;
+use Pyjac\OpenSourceEvangelist\Evangelist\SeniorEvangelist;
+use Pyjac\OpenSourceEvangelist\OpenSourceEvangelistFactory;
 
 class OpenSourceEvangelistFactoryTest extends PHPUnit_Framework_TestCase
 {
-	/**
+    /**
      * The instance of OpenSourceEvangelistFactory used in the test.
-     * 
+     *
      * @var Pyjac\OpenSourceEvangelist\OpenSourceEvangelistFactory
      */
     protected $openSourceEvangelistFactory;
-    
+
     protected function setUp()
     {
         $this->openSourceEvangelistFactory = new OpenSourceEvangelistFactory();
     }
-	
 
     public function testCreateEvangelistReturnsAnEvangelist()
     {
@@ -77,7 +76,6 @@ class OpenSourceEvangelistFactoryTest extends PHPUnit_Framework_TestCase
      */
     public function testCreateEvangelistThrowsInvalidArgumentExceptionWhenNonIntegerValueIsPassedForRepos()
     {
-        $this->openSourceEvangelistFactory->createEvangelist(4, "pyjac");
+        $this->openSourceEvangelistFactory->createEvangelist(4, 'pyjac');
     }
-
 }
