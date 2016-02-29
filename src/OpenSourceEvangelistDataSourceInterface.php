@@ -4,7 +4,7 @@ namespace Pyjac\OpenSourceEvangelist;
 
 interface OpenSourceEvangelistDataSourceInterface
 {
-	 /**
+    /**
      * Get data of the provided username from the data source.
      *
      * @param string $username
