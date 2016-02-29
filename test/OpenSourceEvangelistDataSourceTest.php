@@ -2,6 +2,7 @@
 
 use \Mockery as m;
 use Pyjac\OpenSourceEvangelist\OpenSourceEvangelistDataSource;
+use Pyjac\OpenSourceEvangelist\Exception\OpenSourceEvangelistNotFoundException;
 
 class OpenSourceEvangelistDataSourceTest extends PHPUnit_Framework_TestCase
 {
@@ -25,6 +26,14 @@ class OpenSourceEvangelistDataSourceTest extends PHPUnit_Framework_TestCase
 
         $this->assertObjectHasAttribute('login', $evangelistData);
         $this->assertObjectHasAttribute('public_repos', $evangelistData);
+    }
+
+    /**
+     * @expectedException Pyjac\OpenSourceEvangelist\Exception\OpenSourceEvangelistNotFoundException
+     */
+    public function testGetEvangelistDataThrowsOpenSourceEvangelistNotFoundExceptionWhenNonExitentUsernameIsPassed()
+    {
+        $this->openSourceEvangelistDataSource->getEvangelistData('$andela%@');
     }
 
     protected function loadEnv()
