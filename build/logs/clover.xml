@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1456758377">
-  <project timestamp="1456758377">
+<coverage generated="1456782250">
+  <project timestamp="1456782250">
     <package name="Pyjac\OpenSourceEvangelist\Evangelist">
       <file name="/Users/bendozy/Code/Checkpoints/OpenSourceEvangelist/src/Evangelist/AssociateEvangelist.php">
         <class name="AssociateEvangelist" namespace="Pyjac\OpenSourceEvangelist\Evangelist">
@@ -84,57 +84,47 @@
     <package name="Pyjac\OpenSourceEvangelist">
       <file name="/Users/bendozy/Code/Checkpoints/OpenSourceEvangelist/src/OpenSourceEvangelist.php">
         <class name="OpenSourceEvangelist" namespace="Pyjac\OpenSourceEvangelist">
-          <metrics methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="13" coveredelements="13"/>
+          <metrics methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="7" coveredelements="7"/>
         </class>
-        <line num="30" type="method" name="__construct" crap="1" count="2"/>
-        <line num="32" type="stmt" count="2"/>
-        <line num="33" type="stmt" count="2"/>
-        <line num="34" type="stmt" count="2"/>
-        <line num="35" type="stmt" count="2"/>
-        <line num="44" type="method" name="getEvangelist" crap="1" count="2"/>
+        <line num="27" type="method" name="__construct" crap="1" count="2"/>
+        <line num="29" type="stmt" count="2"/>
+        <line num="30" type="stmt" count="2"/>
+        <line num="31" type="stmt" count="2"/>
+        <line num="42" type="method" name="getEvangelist" crap="1" count="2"/>
+        <line num="44" type="stmt" count="2"/>
         <line num="46" type="stmt" count="2"/>
-        <line num="48" type="stmt" count="2"/>
-        <line num="51" type="method" name="loadEnv" crap="1" count="2"/>
-        <line num="53" type="stmt" count="2"/>
-        <line num="55" type="stmt" count="2"/>
-        <line num="56" type="stmt" count="2"/>
-        <line num="57" type="stmt" count="2"/>
-        <metrics loc="58" ncloc="33" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="13" coveredelements="13"/>
+        <metrics loc="48" ncloc="23" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="7" coveredelements="7"/>
       </file>
       <file name="/Users/bendozy/Code/Checkpoints/OpenSourceEvangelist/src/OpenSourceEvangelistDataSource.php">
         <class name="OpenSourceEvangelistDataSource" namespace="Pyjac\OpenSourceEvangelist">
-          <metrics methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="9" elements="10" coveredelements="10"/>
+          <metrics methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="6" coveredelements="6"/>
         </class>
-        <line num="19" type="method" name="getEvangelistData" crap="2" count="2"/>
-        <line num="22" type="stmt" count="2"/>
-        <line num="24" type="stmt" count="2"/>
-        <line num="26" type="stmt" count="2"/>
-        <line num="27" type="stmt" count="2"/>
-        <line num="28" type="stmt" count="2"/>
-        <line num="29" type="stmt" count="2"/>
-        <line num="31" type="stmt" count="1"/>
-        <line num="32" type="stmt" count="1"/>
-        <line num="33" type="stmt" count="1"/>
-        <metrics loc="36" ncloc="28" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="9" elements="10" coveredelements="10"/>
+        <line num="20" type="method" name="getEvangelistData" crap="2" count="2"/>
+        <line num="23" type="stmt" count="2"/>
+        <line num="25" type="stmt" count="2"/>
+        <line num="26" type="stmt" count="1"/>
+        <line num="27" type="stmt" count="1"/>
+        <line num="28" type="stmt" count="1"/>
+        <metrics loc="31" ncloc="22" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="6" coveredelements="6"/>
       </file>
       <file name="/Users/bendozy/Code/Checkpoints/OpenSourceEvangelist/src/OpenSourceEvangelistFactory.php">
         <class name="OpenSourceEvangelistFactory" namespace="Pyjac\OpenSourceEvangelist">
           <metrics methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="11" elements="13" coveredelements="13"/>
         </class>
-        <line num="19" type="method" name="createEvangelist" crap="6" count="7"/>
-        <line num="21" type="stmt" count="7"/>
-        <line num="22" type="stmt" count="5"/>
-        <line num="23" type="stmt" count="2"/>
-        <line num="25" type="stmt" count="3"/>
-        <line num="26" type="stmt" count="1"/>
-        <line num="28" type="stmt" count="2"/>
-        <line num="29" type="stmt" count="1"/>
-        <line num="32" type="stmt" count="1"/>
-        <line num="44" type="method" name="validateUserInput" crap="3" count="7"/>
-        <line num="45" type="stmt" count="7"/>
-        <line num="46" type="stmt" count="2"/>
-        <line num="48" type="stmt" count="5"/>
-        <metrics loc="49" ncloc="33" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="11" elements="13" coveredelements="13"/>
+        <line num="20" type="method" name="createEvangelist" crap="6" count="7"/>
+        <line num="22" type="stmt" count="7"/>
+        <line num="23" type="stmt" count="5"/>
+        <line num="24" type="stmt" count="2"/>
+        <line num="26" type="stmt" count="3"/>
+        <line num="27" type="stmt" count="1"/>
+        <line num="29" type="stmt" count="2"/>
+        <line num="30" type="stmt" count="1"/>
+        <line num="33" type="stmt" count="1"/>
+        <line num="46" type="method" name="validateUserInput" crap="3" count="7"/>
+        <line num="48" type="stmt" count="7"/>
+        <line num="49" type="stmt" count="2"/>
+        <line num="51" type="stmt" count="5"/>
+        <metrics loc="52" ncloc="34" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="11" elements="13" coveredelements="13"/>
       </file>
     </package>
     <file name="/Users/bendozy/Code/Checkpoints/OpenSourceEvangelist/src/OpenSourceEvangelistDataSourceInterface.php">
@@ -143,6 +133,6 @@
     <file name="/Users/bendozy/Code/Checkpoints/OpenSourceEvangelist/src/OpenSourceEvangelistFactoryInterface.php">
       <metrics loc="8" ncloc="8" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
-    <metrics files="11" loc="384" ncloc="235" classes="9" methods="22" coveredmethods="21" conditionals="0" coveredconditionals="0" statements="54" coveredstatements="51" elements="76" coveredelements="72"/>
+    <metrics files="11" loc="372" ncloc="220" classes="9" methods="21" coveredmethods="20" conditionals="0" coveredconditionals="0" statements="45" coveredstatements="42" elements="66" coveredelements="62"/>
   </project>
 </coverage>
