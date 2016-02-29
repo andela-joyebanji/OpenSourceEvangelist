@@ -21,13 +21,33 @@ abstract class EvangelistAbstract
     /**
      * Set the username and number of Repositories for the inheriting class.
      *
-     * @param $username
-     * @param $numberOfRepos
+     * @param string $username
+     * @param int $numberOfRepos
      */
     public function __construct($username, $numberOfRepos)
     {
         $this->username = $username;
         $this->numberOfRepos = $numberOfRepos;
+    }
+
+    /**
+     * Get the username of the evangelist.
+     *
+     * @return string
+     */
+    public function getUsername()
+    {
+        return $this->username;
+    }
+
+    /**
+     * Get the rank of the evangelist.
+     *
+     * @return int
+     */
+    public function getNumberOfRepos()
+    {
+        return $this->numberOfRepos;
     }
 
     /**
