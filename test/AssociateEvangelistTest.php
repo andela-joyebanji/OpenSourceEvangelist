@@ -25,4 +25,13 @@ class AssociateEvangelistTest extends PHPUnit_Framework_TestCase
     {
         $this->assertSame('Keep Up The Good Work, I crown you Associate Evangelist', $this->associateEvangelist->getStatus());
     }
+
+    public function testGetUsername()
+    {
+        $this->assertSame('pyjac', $this->associateEvangelist->getUsername());
+    }
+    public function testGetNumberOfRepos()
+    {
+        $this->assertSame(15, $this->associateEvangelist->getNumberOfRepos());
+    }
 }
