@@ -7,22 +7,22 @@ class OpenSourceEvangelist
     /**
       * Stores reference to the Open Source Evangelist Factory.
       *
-      * @var Pyjac\OpenSourceEvangelist\OpenSourceEvangelistFactory
+      * @var Pyjac\OpenSourceEvangelist\OpenSourceEvangelistFactoryInterface
       */
      private $openSourceEvangelistFactory;
 
      /**
       * Stores a Reference to the Open Source Evangelist Data Source.
       *
-      * @var Pyjac\OpenSourceEvangelist\OpenSourceEvangelistDataSource
+      * @var Pyjac\OpenSourceEvangelist\OpenSourceEvangelistDataSourceInterface
       */
      private $openSourceEvangelistDataSource;
 
      /**
       * Create a new Open Source Evangelist instance.
       *
-      * @param OpenSourceEvangelistDataSourceInterface $openSourceEvangelistDataSource
-      * @param OpenSourceEvangelistFactoryInterface    $openSourceEvangelistFactoryInterface
+      * @param Pyjac\OpenSourceEvangelist\OpenSourceEvangelistDataSourceInterface $openSourceEvangelistDataSource
+      * @param Pyjac\OpenSourceEvangelist\OpenSourceEvangelistFactoryInterface    $openSourceEvangelistFactory
       */
      public function __construct(OpenSourceEvangelistDataSourceInterface $openSourceEvangelistDataSource, OpenSourceEvangelistFactoryInterface $openSourceEvangelistFactory)
      {
@@ -31,10 +31,9 @@ class OpenSourceEvangelist
      }
 
      /**
-      * Create a open source evangelist instance.
+      * Get a open source evangelist instance.
       *
       * @param string $username
-      * @param IOpenSourceEvangelistFactory $openSourceEvangelistFactory
       *
       * @throws InvalidArgumentException
       */
