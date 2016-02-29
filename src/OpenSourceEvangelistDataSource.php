@@ -3,6 +3,8 @@
 namespace Pyjac\OpenSourceEvangelist;
 
 use GuzzleHttp;
+use GuzzleHttp\Exception\ClientException;
+use Pyjac\OpenSourceEvangelist\Exception\OpenSourceEvangelistNotFoundException;
 
 class OpenSourceEvangelistDataSource implements OpenSourceEvangelistDataSourceInterface
 {
@@ -10,7 +12,7 @@ class OpenSourceEvangelistDataSource implements OpenSourceEvangelistDataSourceIn
 	{
 		try {
 			$client = new GuzzleHttp\Client();
-			
+
 			$res = $client->request('GET', getenv('GITHUB_API_URL').$username , [
 				'query' => [
 							'client_id'     => getenv('CLIENT_ID'),
@@ -21,11 +23,9 @@ class OpenSourceEvangelistDataSource implements OpenSourceEvangelistDataSourceIn
 			return json_decode($res->getBody());
 
 		} catch (ClientException $e) {
-			//throw new Exception("Error Processing Request", 1);
-			exit("None Implementation Error");
-		    //if ($e->hasResponse()) {
-		      //  echo $e->getResponse()->getReasonPhrase();
-		    //}
+			
+			throw new OpenSourceEvangelistNotFoundException;
+			
 		}
 	}
 }
