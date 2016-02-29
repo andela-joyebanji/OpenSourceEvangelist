@@ -38,7 +38,7 @@ class OpenSourceEvangelistDataSourceTest extends PHPUnit_Framework_TestCase
 
     protected function loadEnv()
     {
-        if(!isset(getenv('TRAVIS_BUILD'))){
+        if(!getenv('TRAVIS_BUILD')){
             $dotenv = new Dotenv\Dotenv(__DIR__."/../");
             $dotenv->load();
         }
