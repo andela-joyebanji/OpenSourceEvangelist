@@ -14,25 +14,23 @@ class OpenSourceEvangelistDataSourceTest extends PHPUnit_Framework_TestCase
     
     protected function setUp()
     {
-    	$evangelistData = new StdClass;
-		$evangelistData->public_repos = 25;
-		$evangelistData->login = 'pyjac';
-
-        $this->openSourceEvangelistDataSource = 
-    					m::mock('Pyjac\OpenSourceEvangelist\OpenSourceEvangelistDataSource');
-        $this->openSourceEvangelistDataSource->shouldReceive('getEvangelistData')
-        									 ->with('pyjac')->once()->andReturn($evangelistData);
+        $this->loadEnv();
+        $this->openSourceEvangelistDataSource = new OpenSourceEvangelistDataSource();
     }
 
     public function testGetEvangelistData()
     {
-    	$evangelistData = new StdClass;
-		$evangelistData->public_repos = 25;
-		$evangelistData->login = 'pyjac';
+    	
+        $evangelistData = $this->openSourceEvangelistDataSource->getEvangelistData('andela-anandaa');
 
-        $evangelistData2 = $this->openSourceEvangelistDataSource->getEvangelistData('pyjac');
+        $this->assertObjectHasAttribute('login', $evangelistData);
+        $this->assertObjectHasAttribute('public_repos', $evangelistData);
+    }
 
-        $this->assertEquals($evangelistData, $evangelistData2);
+    protected function loadEnv()
+    {
+        $dotenv = new Dotenv\Dotenv(__DIR__."/../");
+        $dotenv->load();
     }
 	
 }
