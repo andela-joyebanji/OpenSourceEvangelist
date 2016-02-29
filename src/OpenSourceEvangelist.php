@@ -31,6 +31,7 @@ class OpenSourceEvangelist
      {
          $this->openSourceEvangelistDataSource = $openSourceEvangelistDataSource;
          $this->openSourceEvangelistFactory = $openSourceEvangelistFactory;
+         $this->loadEnv();
      }
 
      /**
@@ -46,4 +47,11 @@ class OpenSourceEvangelist
 
          return $this->openSourceEvangelistFactory->createEvangelist($evangelistData->login, $evangelistData->public_repos);
      }
+
+    protected function loadEnv()
+    {
+        $dotenv = new \Dotenv\Dotenv(__DIR__.'/../../../');
+        $dotenv->load();
+        $dotenv->required(["GITHUB_API_URL", "CLIENT_ID", "CLIENT_SECRET"]);
+    }
 }
