@@ -47,7 +47,10 @@ class OpenSourceEvangelist
 
          return $this->openSourceEvangelistFactory->createEvangelist($evangelistData->login, $evangelistData->public_repos);
      }
-
+     /**
+      * Load needed env variables.
+      * @return void
+      */
     protected function loadEnv()
     { 
       if (!getenv('TRAVIS_BUILD')) {
