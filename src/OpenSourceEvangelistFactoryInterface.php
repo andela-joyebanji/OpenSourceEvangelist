@@ -4,7 +4,7 @@ namespace Pyjac\OpenSourceEvangelist;
 
 interface OpenSourceEvangelistFactoryInterface
 {
-	/**
+    /**
      * Factory method to create an instance of an evangelist.
      *
      * @param string $username
