@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1456782250">
-  <project timestamp="1456782250">
+<coverage generated="1456786613">
+  <project timestamp="1456786613">
     <package name="Pyjac\OpenSourceEvangelist\Evangelist">
       <file name="/Users/bendozy/Code/Checkpoints/OpenSourceEvangelist/src/Evangelist/AssociateEvangelist.php">
         <class name="AssociateEvangelist" namespace="Pyjac\OpenSourceEvangelist\Evangelist">
@@ -97,15 +97,16 @@
       </file>
       <file name="/Users/bendozy/Code/Checkpoints/OpenSourceEvangelist/src/OpenSourceEvangelistDataSource.php">
         <class name="OpenSourceEvangelistDataSource" namespace="Pyjac\OpenSourceEvangelist">
-          <metrics methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="6" coveredelements="6"/>
+          <metrics methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="7" coveredelements="7"/>
         </class>
         <line num="20" type="method" name="getEvangelistData" crap="2" count="2"/>
         <line num="23" type="stmt" count="2"/>
         <line num="25" type="stmt" count="2"/>
-        <line num="26" type="stmt" count="1"/>
-        <line num="27" type="stmt" count="1"/>
+        <line num="27" type="stmt" count="2"/>
         <line num="28" type="stmt" count="1"/>
-        <metrics loc="31" ncloc="22" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="6" coveredelements="6"/>
+        <line num="29" type="stmt" count="1"/>
+        <line num="30" type="stmt" count="1"/>
+        <metrics loc="33" ncloc="24" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="7" coveredelements="7"/>
       </file>
       <file name="/Users/bendozy/Code/Checkpoints/OpenSourceEvangelist/src/OpenSourceEvangelistFactory.php">
         <class name="OpenSourceEvangelistFactory" namespace="Pyjac\OpenSourceEvangelist">
@@ -128,11 +129,11 @@
       </file>
     </package>
     <file name="/Users/bendozy/Code/Checkpoints/OpenSourceEvangelist/src/OpenSourceEvangelistDataSourceInterface.php">
-      <metrics loc="8" ncloc="8" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      <metrics loc="17" ncloc="8" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
     <file name="/Users/bendozy/Code/Checkpoints/OpenSourceEvangelist/src/OpenSourceEvangelistFactoryInterface.php">
-      <metrics loc="8" ncloc="8" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      <metrics loc="16" ncloc="8" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
-    <metrics files="11" loc="372" ncloc="220" classes="9" methods="21" coveredmethods="20" conditionals="0" coveredconditionals="0" statements="45" coveredstatements="42" elements="66" coveredelements="62"/>
+    <metrics files="11" loc="391" ncloc="222" classes="9" methods="21" coveredmethods="20" conditionals="0" coveredconditionals="0" statements="46" coveredstatements="43" elements="67" coveredelements="63"/>
   </project>
 </coverage>
