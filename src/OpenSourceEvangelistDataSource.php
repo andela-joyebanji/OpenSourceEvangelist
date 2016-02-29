@@ -10,6 +10,7 @@ class OpenSourceEvangelistDataSource implements OpenSourceEvangelistDataSourceIn
 	{
 		try {
 			$client = new GuzzleHttp\Client();
+			
 			$res = $client->request('GET', getenv('GITHUB_API_URL').$username , [
 				'query' => [
 							'client_id'     => getenv('CLIENT_ID'),
