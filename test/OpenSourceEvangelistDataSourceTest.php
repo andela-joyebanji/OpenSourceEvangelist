@@ -1,18 +1,16 @@
 <?php
 
-use \Mockery as m;
 use Pyjac\OpenSourceEvangelist\OpenSourceEvangelistDataSource;
-use Pyjac\OpenSourceEvangelist\Exception\OpenSourceEvangelistNotFoundException;
 
 class OpenSourceEvangelistDataSourceTest extends PHPUnit_Framework_TestCase
 {
-	/**
+    /**
      * The instance of OpenSourceEvangelistDataSource used in the test.
-     * 
+     *
      * @var Pyjac\OpenSourceEvangelist\OpenSourceEvangelistDataSource
      */
     protected $openSourceEvangelistDataSource;
-    
+
     protected function setUp()
     {
         $this->loadEnv();
@@ -21,7 +19,6 @@ class OpenSourceEvangelistDataSourceTest extends PHPUnit_Framework_TestCase
 
     public function testGetEvangelistData()
     {
-    	
         $evangelistData = $this->openSourceEvangelistDataSource->getEvangelistData('andela-anandaa');
 
         $this->assertObjectHasAttribute('login', $evangelistData);
@@ -38,11 +35,9 @@ class OpenSourceEvangelistDataSourceTest extends PHPUnit_Framework_TestCase
 
     protected function loadEnv()
     {
-        if(!getenv('TRAVIS_BUILD')){
-            $dotenv = new Dotenv\Dotenv(__DIR__."/../");
+        if (!getenv('TRAVIS_BUILD')) {
+            $dotenv = new Dotenv\Dotenv(__DIR__.'/../');
             $dotenv->load();
         }
     }
-	
 }
-

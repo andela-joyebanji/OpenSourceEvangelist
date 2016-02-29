@@ -4,6 +4,5 @@ namespace Pyjac\OpenSourceEvangelist;
 
 interface OpenSourceEvangelistFactoryInterface
 {
-
-	function getEvangelist($numberOfRepos);
+    public function getEvangelist($numberOfRepos);
 }
