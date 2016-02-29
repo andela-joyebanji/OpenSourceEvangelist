@@ -105,7 +105,7 @@ The getEvangelist method returns an object of an evangelist.
 ```
 
 ### Exceptions
-	OpenSourceEvangelistNotFoundException: This exception is thrown when the provided github username is not found.
+	OpenSourceEvangelistNotFoundException: This exception is thrown when the provided Github username is not found.
 
 
 ## Security
