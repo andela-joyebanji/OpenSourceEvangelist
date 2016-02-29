@@ -9,13 +9,14 @@ use Pyjac\OpenSourceEvangelist\Evangelist\SeniorEvangelist;
 
 class OpenSourceEvangelistFactory implements OpenSourceEvangelistFactoryInterface
 {
-	/**
-	 * Factory method to create an instance of an evangelist.
-	 * 
-	 * @param  string $username 
-	 * @param  int $repos    
-	 * @return Pyjac\OpenSourceEvangelist\Evangelist\EvangelistAbstract
-	 */
+    /**
+     * Factory method to create an instance of an evangelist.
+     *
+     * @param string $username
+     * @param int    $repos
+     *
+     * @return Pyjac\OpenSourceEvangelist\Evangelist\EvangelistAbstract
+     */
     public function createEvangelist($username, $repos)
     {
         $this->validateUserInput($username, $repos);
@@ -34,15 +35,17 @@ class OpenSourceEvangelistFactory implements OpenSourceEvangelistFactoryInterfac
 
     /**
      * Validate inputs are of the expected type.
-     * 	
-     * @param  string $username [description]
-     * @param  int $repos    [description]
+     *
+     * @param string $username [description]
+     * @param int    $repos    [description]
+     *
      * @throws \InvalidArgumentException
-     * 
+     *
      * @return void
      */
-    private function validateUserInput($username, $repos){
-    	if (!is_string($username) || !is_int($repos)) {
+    private function validateUserInput($username, $repos)
+    {
+        if (!is_string($username) || !is_int($repos)) {
             throw new \InvalidArgumentException('Username must be type of string and number of repository of type interger.');
         }
     }
