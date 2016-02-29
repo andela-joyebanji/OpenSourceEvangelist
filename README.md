@@ -6,10 +6,10 @@
 
 --
 
-This package aims to provide an analysis based on the number of open source projects an individual possess on Github.
+This package aims to provide an analysis based on the number of open source projects an individual possess on Github.This Package uses [PSR-4 Autoload Standard](http://www.php-fig.org/psr/psr-4/ "PSR-4").
 
 ```
-    Number of repository < 5 : None Evangelist.
+    Number of repository < 5: None Evangelist.
     Number of repository >= 5 and Number of repository <= 10 : Junior Evangelist.
     Number of repository >= 11 and Number of repository <= 20 : Associate Evangelist.
     Number of repository >= 21 : Senior Evangelist.
@@ -32,11 +32,80 @@ $ composer require pyjac/opensourceevangelist
 	use Pyjac\OpenSourceEvangelist\OpenSourceEvangelist;
 	use Pyjac\OpenSourceEvangelist\OpenSourceEvangelistDataSource;
 	use Pyjac\OpenSourceEvangelist\OpenSourceEvangelistFactory;
+	use Pyjac\OpenSourceEvangelist\Exception\OpenSourceEvangelistNotFoundException;
 
-	$openSourceEvangelist = new OpenSourceEvangelist(new OpenSourceEvangelistDataSource(), new OpenSourceEvangelistFactory());
-	$evangelist = $openSourceEvangelist->getEvangelist('pyjac');
-	echo $evangelist->getStatus();
+	try
+	{
+		$openSourceEvangelist = new OpenSourceEvangelist(new OpenSourceEvangelistDataSource(), new OpenSourceEvangelistFactory());
+		$evangelist = $openSourceEvangelist->getEvangelist('pyjac');
+		echo $evangelist->getStatus();
+	} catch(OpenSourceEvangelistNotFoundException $ex){
+		echo $ex->getMessage();
+	}
+	
 ```
+
+### The OpenSourceEvangelist class
+
+The OpenSourceEvangelist class receives two instances of OpenSourceEvangelistDataSource and OpenSourceEvangelistFactory class.
+
+```php
+	$openSourceEvangelist = new OpenSourceEvangelist(new OpenSourceEvangelistDataSource(), new OpenSourceEvangelistFactory());
+```
+
+You can implement your own by implementing the below interface for the class OpenSourceEvangelistDataSource.
+```php
+
+//Pyjac\OpenSourceEvangelist\OpenSourceEvangelistDataSourceInterface
+
+interface OpenSourceEvangelistDataSourceInterface
+{
+	 /**
+     * Get data of the provided username from the data source.
+     *
+     * @param string $username
+     *
+     * @throws Pyjac\OpenSourceEvangelist\Exception\OpenSourceEvangelistNotFoundException
+     *
+     * @return \stdClass
+     */
+    public function getEvangelistData($username);
+}
+```
+
+And the below interface for the class OpenSourceEvangelistFactory.
+
+```php
+Pyjac\OpenSourceEvangelist\OpenSourceEvangelistFactoryInterface
+interface OpenSourceEvangelistFactoryInterface
+{
+	/**
+     * Factory method to create an instance of an evangelist.
+     *
+     * @param string $username
+     * @param int    $repos
+     *
+     * @return Pyjac\OpenSourceEvangelist\Evangelist\EvangelistAbstract
+     */
+    public function createEvangelist($username, $repos);
+}
+
+```
+
+### The getEvangelist method
+
+The getEvangelist method returns an object of an evangelist.
+```php
+	$evangelist = $openSourceEvangelist->getEvangelist('pyjac');
+
+	echo $evangelist->getStatus();
+	echo $evangelist->getUsername();
+	echo $evangelist->getRank();
+	echo $evangelist->getNumberOfRepos();
+```
+
+### Exceptions
+	OpenSourceEvangelistNotFoundException: This exception is thrown when the provided github username is not found.
 
 
 ## Security
@@ -70,4 +139,3 @@ Copyright (c) 2016 Oyebanji Jacob <oyebanji.jacob@andela.com>
 > LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 > OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 > THE SOFTWARE.
-
