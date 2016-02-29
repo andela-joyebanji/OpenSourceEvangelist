@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Pyjac\OpenSourceEvangelist;
 
 use Pyjac\OpenSourceEvangelist\Evangelist\AssociateEvangelist;
