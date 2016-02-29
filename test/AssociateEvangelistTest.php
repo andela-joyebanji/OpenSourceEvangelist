@@ -30,6 +30,7 @@ class AssociateEvangelistTest extends PHPUnit_Framework_TestCase
     {
         $this->assertSame('pyjac', $this->associateEvangelist->getUsername());
     }
+
     public function testGetNumberOfRepos()
     {
         $this->assertSame(15, $this->associateEvangelist->getNumberOfRepos());

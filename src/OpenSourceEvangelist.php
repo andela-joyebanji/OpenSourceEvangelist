@@ -2,9 +2,6 @@
 
 namespace Pyjac\OpenSourceEvangelist;
 
-use Pyjac\OpenSourceEvangelist\OpenSourceEvangelistDataSourceInterface;
-use Pyjac\OpenSourceEvangelist\OpenSourceEvangelistFactoryInterface;
-
 class OpenSourceEvangelist
 {
     /**
@@ -38,7 +35,9 @@ class OpenSourceEvangelist
       * Get a open source evangelist instance.
       *
       * @param string $username
+      *
       * @throws InvalidArgumentException
+      *
       * @return  Pyjac\OpenSourceEvangelist\Evangelist\EvangelistAbstract
       */
      public function getEvangelist($username)
@@ -47,16 +46,18 @@ class OpenSourceEvangelist
 
          return $this->openSourceEvangelistFactory->createEvangelist($evangelistData->login, $evangelistData->public_repos);
      }
-     /**
-      * Load needed env variables.
-      * @return void
-      */
+
+    /**
+     * Load needed env variables.
+     *
+     * @return void
+     */
     protected function loadEnv()
-    { 
-      if (!getenv('TRAVIS_BUILD')) {
-        $dotenv = new \Dotenv\Dotenv(__DIR__.'/../../../');
-        $dotenv->load();
-        $dotenv->required(["GITHUB_API_URL", "CLIENT_ID", "CLIENT_SECRET"]);
-      }
+    {
+        if (!getenv('TRAVIS_BUILD')) {
+            $dotenv = new \Dotenv\Dotenv(__DIR__.'/../../../');
+            $dotenv->load();
+            $dotenv->required(['GITHUB_API_URL', 'CLIENT_ID', 'CLIENT_SECRET']);
+        }
     }
 }

@@ -10,11 +10,12 @@ class OpenSourceEvangelistDataSource implements OpenSourceEvangelistDataSourceIn
 {
     /**
      * Get data of the provided username from the data source.
-     *     
-     * @param  string $username 
+     *
+     * @param string $username
+     *
      * @throws Pyjac\OpenSourceEvangelist\Exception\OpenSourceEvangelistNotFoundException
-     * 
-     * @return \stdClass          
+     *
+     * @return \stdClass
      */
     public function getEvangelistData($username)
     {

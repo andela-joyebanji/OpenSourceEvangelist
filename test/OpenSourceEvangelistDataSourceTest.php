@@ -38,7 +38,7 @@ class OpenSourceEvangelistDataSourceTest extends PHPUnit_Framework_TestCase
         if (!getenv('TRAVIS_BUILD')) {
             $dotenv = new \Dotenv\Dotenv(__DIR__.'/../../../');
             $dotenv->load();
-            $dotenv->required(["GITHUB_API_URL", "CLIENT_ID", "CLIENT_SECRET"]);
+            $dotenv->required(['GITHUB_API_URL', 'CLIENT_ID', 'CLIENT_SECRET']);
         }
     }
 }

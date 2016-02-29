@@ -22,7 +22,7 @@ abstract class EvangelistAbstract
      * Set the username and number of Repositories for the inheriting class.
      *
      * @param string $username
-     * @param int $numberOfRepos
+     * @param int    $numberOfRepos
      */
     public function __construct($username, $numberOfRepos)
     {

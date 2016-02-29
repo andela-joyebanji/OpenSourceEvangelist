@@ -6,7 +6,7 @@ use Pyjac\OpenSourceEvangelist\OpenSourceEvangelist;
 use Pyjac\OpenSourceEvangelist\OpenSourceEvangelistDataSource;
 use Pyjac\OpenSourceEvangelist\OpenSourceEvangelistFactory;
 
-$openSourceEvangelist = new OpenSourceEvangelist(new OpenSourceEvangelistDataSource,new OpenSourceEvangelistFactory);
+$openSourceEvangelist = new OpenSourceEvangelist(new OpenSourceEvangelistDataSource(), new OpenSourceEvangelistFactory());
 $evangelist = $openSourceEvangelist->getEvangelist('pyjac');
 echo $evangelist->getStatus();
 
