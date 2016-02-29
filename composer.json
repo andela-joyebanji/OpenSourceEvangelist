@@ -1,5 +1,5 @@
 {
-    "name": "Pyjac/OpenSourceEvangelist",
+    "name": "pyjac/open-source-evangelist",
     "description": "This package aims to provide an analysis based on the number of open source projects an individual possess on Github.",
     "type": "",
     "license": "MIT",
