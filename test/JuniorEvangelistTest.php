@@ -9,7 +9,7 @@ class JuniorEvangelistTest extends PHPUnit_Framework_TestCase
      *
      * @var Pyjac\OpenSourceEvangelist\Evangelist\JuniorEvangelist
      */
-    protected $JuniorEvangelist;
+    protected $juniorEvangelist;
 
     protected function setUp()
     {
