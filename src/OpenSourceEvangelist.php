@@ -31,11 +31,9 @@ class OpenSourceEvangelist
      }
 
      /**
-      * Get a open source evangelist instance.
+      * Get an evangelist instance.
       *
       * @param string $username
-      *
-      * @throws InvalidArgumentException
       *
       * @return  Pyjac\OpenSourceEvangelist\Evangelist\EvangelistAbstract
       */
