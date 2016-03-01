@@ -22,9 +22,10 @@ class OpenSourceEvangelistDataSource implements OpenSourceEvangelistDataSourceIn
         try {
             $client = new GuzzleHttp\Client();
 
-            $res = $client->request('GET', "https://api.github.com/users/".$username, [
+            $res = $client->request('GET', 'https://api.github.com/users/'.$username, [
                 'headers' => [
-                'User-Agent' => 'OpenSourceEvangelist/1.0']]);
+                'User-Agent' => 'OpenSourceEvangelist/1.0', ], ]);
+
             return json_decode($res->getBody());
         } catch (ClientException $e) {
             throw new OpenSourceEvangelistNotFoundException();
