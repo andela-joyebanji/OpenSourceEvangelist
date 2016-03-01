@@ -19,7 +19,7 @@ abstract class EvangelistAbstract
     private $numberOfRepos;
 
     /**
-     * Set the username and number of Repositories for the inheriting class.
+     * Set the username and number of repositories for the inheriting class.
      *
      * @param string $username
      * @param int    $numberOfRepos
@@ -41,7 +41,7 @@ abstract class EvangelistAbstract
     }
 
     /**
-     * Get the rank of the evangelist.
+     * Get the number of repos.
      *
      * @return int
      */
