@@ -45,15 +45,15 @@ $ composer require pyjac/opensourceevangelist
 	
 ```
 
-### The OpenSourceEvangelist class
+### The `OpenSourceEvangelist` class
 
-The OpenSourceEvangelist class receives two instances of OpenSourceEvangelistDataSource and OpenSourceEvangelistFactory class.
+The `OpenSourceEvangelist` class receives two instances of `OpenSourceEvangelistDataSource` and `OpenSourceEvangelistFactory` class.
 
 ```php
 	$openSourceEvangelist = new OpenSourceEvangelist(new OpenSourceEvangelistDataSource(), new OpenSourceEvangelistFactory());
 ```
 
-You can implement your own by implementing the below interface for the class OpenSourceEvangelistDataSource.
+You can implement your own by implementing the below interface for the class `OpenSourceEvangelistDataSource`.
 ```php
 
 //Pyjac\OpenSourceEvangelist\OpenSourceEvangelistDataSourceInterface
@@ -73,10 +73,11 @@ interface OpenSourceEvangelistDataSourceInterface
 }
 ```
 
-And the below interface for the class OpenSourceEvangelistFactory.
+And the below interface for the class `OpenSourceEvangelistFactory`.
 
 ```php
-Pyjac\OpenSourceEvangelist\OpenSourceEvangelistFactoryInterface
+//Pyjac\OpenSourceEvangelist\OpenSourceEvangelistFactoryInterface
+
 interface OpenSourceEvangelistFactoryInterface
 {
 	/**
@@ -92,9 +93,9 @@ interface OpenSourceEvangelistFactoryInterface
 
 ```
 
-### The getEvangelist method
+### The `getEvangelist` method
 
-The getEvangelist method returns an object of an evangelist.
+The `getEvangelist` method returns an object of an evangelist.
 ```php
 	$evangelist = $openSourceEvangelist->getEvangelist('pyjac');
 
@@ -105,7 +106,7 @@ The getEvangelist method returns an object of an evangelist.
 ```
 
 ### Exceptions
-	OpenSourceEvangelistNotFoundException: This exception is thrown when the provided Github username is not found.
+	`OpenSourceEvangelistNotFoundException`: This exception is thrown when the provided Github username is not found.
 
 
 ## Security
