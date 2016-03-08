@@ -46,7 +46,7 @@ class OpenSourceEvangelistFactory implements OpenSourceEvangelistFactoryInterfac
     private function validateUserInput($username, $repos)
     {
         if (!is_string($username) || !is_int($repos)) {
-            throw new \InvalidArgumentException('Username must be type of string and number of repository of type interger.');
+            throw new \InvalidArgumentException('Username must be type of string and number of repository of type integer.');
         }
     }
 }
