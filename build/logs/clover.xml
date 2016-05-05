@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1456786613">
+  <project timestamp="1456786613">
+    <package name="Pyjac\OpenSourceEvangelist\Evangelist">
+      <file name="/Users/bendozy/Code/Checkpoints/OpenSourceEvangelist/src/Evangelist/AssociateEvangelist.php">
+        <class name="AssociateEvangelist" namespace="Pyjac\OpenSourceEvangelist\Evangelist">
+          <metrics methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="7" coveredelements="7"/>
+        </class>
+        <line num="13" type="method" name="__construct" crap="1" count="5"/>
+        <line num="15" type="stmt" count="5"/>
+        <line num="16" type="stmt" count="5"/>
+        <line num="23" type="method" name="getRank" crap="1" count="1"/>
+        <line num="25" type="stmt" count="1"/>
+        <line num="33" type="method" name="getStatus" crap="1" count="1"/>
+        <line num="35" type="stmt" count="1"/>
+        <metrics loc="37" ncloc="21" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="7" coveredelements="7"/>
+      </file>
+      <file name="/Users/bendozy/Code/Checkpoints/OpenSourceEvangelist/src/Evangelist/EvangelistAbstract.php">
+        <class name="EvangelistAbstract" namespace="Pyjac\OpenSourceEvangelist\Evangelist">
+          <metrics methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="8" coveredelements="8"/>
+        </class>
+        <line num="27" type="method" name="__construct" crap="1" count="17"/>
+        <line num="29" type="stmt" count="17"/>
+        <line num="30" type="stmt" count="17"/>
+        <line num="31" type="stmt" count="17"/>
+        <line num="38" type="method" name="getUsername" crap="1" count="1"/>
+        <line num="40" type="stmt" count="1"/>
+        <line num="48" type="method" name="getNumberOfRepos" crap="1" count="1"/>
+        <line num="50" type="stmt" count="1"/>
+        <metrics loc="66" ncloc="30" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="8" coveredelements="8"/>
+      </file>
+      <file name="/Users/bendozy/Code/Checkpoints/OpenSourceEvangelist/src/Evangelist/JuniorEvangelist.php">
+        <class name="JuniorEvangelist" namespace="Pyjac\OpenSourceEvangelist\Evangelist">
+          <metrics methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="7" coveredelements="7"/>
+        </class>
+        <line num="13" type="method" name="__construct" crap="1" count="4"/>
+        <line num="15" type="stmt" count="4"/>
+        <line num="16" type="stmt" count="4"/>
+        <line num="23" type="method" name="getRank" crap="1" count="1"/>
+        <line num="25" type="stmt" count="1"/>
+        <line num="33" type="method" name="getStatus" crap="1" count="1"/>
+        <line num="35" type="stmt" count="1"/>
+        <metrics loc="37" ncloc="21" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="7" coveredelements="7"/>
+      </file>
+      <file name="/Users/bendozy/Code/Checkpoints/OpenSourceEvangelist/src/Evangelist/NoneEvangelist.php">
+        <class name="NoneEvangelist" namespace="Pyjac\OpenSourceEvangelist\Evangelist">
+          <metrics methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="7" coveredelements="7"/>
+        </class>
+        <line num="13" type="method" name="__construct" crap="1" count="3"/>
+        <line num="15" type="stmt" count="3"/>
+        <line num="16" type="stmt" count="3"/>
+        <line num="23" type="method" name="getRank" crap="1" count="1"/>
+        <line num="25" type="stmt" count="1"/>
+        <line num="33" type="method" name="getStatus" crap="1" count="1"/>
+        <line num="35" type="stmt" count="1"/>
+        <metrics loc="37" ncloc="21" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="7" coveredelements="7"/>
+      </file>
+      <file name="/Users/bendozy/Code/Checkpoints/OpenSourceEvangelist/src/Evangelist/SeniorEvangelist.php">
+        <class name="SeniorEvangelist" namespace="Pyjac\OpenSourceEvangelist\Evangelist">
+          <metrics methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="7" coveredelements="7"/>
+        </class>
+        <line num="13" type="method" name="__construct" crap="1" count="5"/>
+        <line num="15" type="stmt" count="5"/>
+        <line num="16" type="stmt" count="5"/>
+        <line num="23" type="method" name="getRank" crap="1" count="1"/>
+        <line num="25" type="stmt" count="1"/>
+        <line num="33" type="method" name="getStatus" crap="1" count="1"/>
+        <line num="35" type="stmt" count="1"/>
+        <metrics loc="37" ncloc="21" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="7" coveredelements="7"/>
+      </file>
+    </package>
+    <package name="Pyjac\OpenSourceEvangelist\Exception">
+      <file name="/Users/bendozy/Code/Checkpoints/OpenSourceEvangelist/src/Exception/OpenSourceEvangelistNotFoundException.php">
+        <class name="OpenSourceEvangelistNotFoundException" namespace="Pyjac\OpenSourceEvangelist\Exception">
+          <metrics methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="4" coveredelements="0"/>
+        </class>
+        <line num="7" type="method" name="__construct" crap="2" count="0"/>
+        <line num="8" type="stmt" count="0"/>
+        <line num="9" type="stmt" count="0"/>
+        <line num="10" type="stmt" count="0"/>
+        <metrics loc="11" ncloc="11" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="4" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="Pyjac\OpenSourceEvangelist">
+      <file name="/Users/bendozy/Code/Checkpoints/OpenSourceEvangelist/src/OpenSourceEvangelist.php">
+        <class name="OpenSourceEvangelist" namespace="Pyjac\OpenSourceEvangelist">
+          <metrics methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="7" coveredelements="7"/>
+        </class>
+        <line num="27" type="method" name="__construct" crap="1" count="2"/>
+        <line num="29" type="stmt" count="2"/>
+        <line num="30" type="stmt" count="2"/>
+        <line num="31" type="stmt" count="2"/>
+        <line num="42" type="method" name="getEvangelist" crap="1" count="2"/>
+        <line num="44" type="stmt" count="2"/>
+        <line num="46" type="stmt" count="2"/>
+        <metrics loc="48" ncloc="23" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="7" coveredelements="7"/>
+      </file>
+      <file name="/Users/bendozy/Code/Checkpoints/OpenSourceEvangelist/src/OpenSourceEvangelistDataSource.php">
+        <class name="OpenSourceEvangelistDataSource" namespace="Pyjac\OpenSourceEvangelist">
+          <metrics methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="7" coveredelements="7"/>
+        </class>
+        <line num="20" type="method" name="getEvangelistData" crap="2" count="2"/>
+        <line num="23" type="stmt" count="2"/>
+        <line num="25" type="stmt" count="2"/>
+        <line num="27" type="stmt" count="2"/>
+        <line num="28" type="stmt" count="1"/>
+        <line num="29" type="stmt" count="1"/>
+        <line num="30" type="stmt" count="1"/>
+        <metrics loc="33" ncloc="24" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="7" coveredelements="7"/>
+      </file>
+      <file name="/Users/bendozy/Code/Checkpoints/OpenSourceEvangelist/src/OpenSourceEvangelistFactory.php">
+        <class name="OpenSourceEvangelistFactory" namespace="Pyjac\OpenSourceEvangelist">
+          <metrics methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="11" elements="13" coveredelements="13"/>
+        </class>
+        <line num="20" type="method" name="createEvangelist" crap="6" count="7"/>
+        <line num="22" type="stmt" count="7"/>
+        <line num="23" type="stmt" count="5"/>
+        <line num="24" type="stmt" count="2"/>
+        <line num="26" type="stmt" count="3"/>
+        <line num="27" type="stmt" count="1"/>
+        <line num="29" type="stmt" count="2"/>
+        <line num="30" type="stmt" count="1"/>
+        <line num="33" type="stmt" count="1"/>
+        <line num="46" type="method" name="validateUserInput" crap="3" count="7"/>
+        <line num="48" type="stmt" count="7"/>
+        <line num="49" type="stmt" count="2"/>
+        <line num="51" type="stmt" count="5"/>
+        <metrics loc="52" ncloc="34" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="11" elements="13" coveredelements="13"/>
+      </file>
+    </package>
+    <file name="/Users/bendozy/Code/Checkpoints/OpenSourceEvangelist/src/OpenSourceEvangelistDataSourceInterface.php">
+      <metrics loc="17" ncloc="8" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/Users/bendozy/Code/Checkpoints/OpenSourceEvangelist/src/OpenSourceEvangelistFactoryInterface.php">
+      <metrics loc="16" ncloc="8" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <metrics files="11" loc="391" ncloc="222" classes="9" methods="21" coveredmethods="20" conditionals="0" coveredconditionals="0" statements="46" coveredstatements="43" elements="67" coveredelements="63"/>
+  </project>
+</coverage>
